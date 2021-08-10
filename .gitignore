@@ -1,2 +1,7 @@
 #IDE metadata
-**.idea/**
+*/.idea/*
+*/.idea/**
+
+#target folders
+*/target/*
+*/target/**
