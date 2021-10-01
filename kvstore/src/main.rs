@@ -17,12 +17,6 @@ struct Database {
 
 impl Database {
     fn new() -> Result<Database, std::io::Error> {
-        // let contents = match std::fs::read_to_string("kv.db") {
-        //     Ok(c) => c,
-        //     Err(e) => {
-        //         return Err(e);
-        //     }
-        // };
         let mut map =  HashMap::new();
         let contents = std::fs::read_to_string("kv.db")?;
         for line in contents.lines(){
